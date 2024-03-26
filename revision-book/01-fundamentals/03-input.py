@@ -42,3 +42,13 @@ print('Total of input numbers is ' + str(total))
 # Enter num #1: 12
 # Enter num #2: 23
 # Total of input numbers is 35
+
+##* taking multiple inputs in one line - 
+# making use if split() function for strings and value unpacking of arrays in python
+
+name, age = input("Enter you name and age (separeted by space): ").split()
+print("Hi " + name + " your age is " + age)
+
+# Example Output:
+# Enter you name and age (separeted by space): John 26
+# Hi John your age is 26
