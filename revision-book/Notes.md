@@ -17,3 +17,13 @@
   - ```py 
         print('\U0001F970')  # Output: 🥰
     ```
+
+
+### Operator precedence and associativity
+
+|Operators|Precedence & Associativity |
+|--|--|
+|Paranthesis|Highest|
+|Exponent (**)|Right to Left|
+|*, /, //, %|Left to Right|
+|+, -|Left to Right|
