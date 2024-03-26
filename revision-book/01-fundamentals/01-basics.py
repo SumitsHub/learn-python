@@ -40,3 +40,21 @@ print("Line A \\n Line B")  # Output: Line A \n Line B
 ##* Raw Strings - string starting with letter 'r', treats escape sequences as normal text
 
 print(r"Line A \n Line B")  # Output: Line A \n Line B
+
+
+
+##* Variables in Python
+
+# Creating variables - no need to specify data type and no need to use any keyword like other programming languages
+name = 'Steve'
+print(name)  # printing value of variable
+
+# NOTE: you can't create variables without values unlike other programming language
+
+# Dynamic programming language - type of variable is determined at the run time based on the value assigned to the variable
+# Python is dynamic programming language
+
+name = 123  # storing integer value, initially stored string value
+print(name)
+
+full_name = 'John Doe'  # snake case naming convention is followed 
