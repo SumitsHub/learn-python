@@ -30,3 +30,17 @@ class Animal:
 print(type(Animal)) # <class 'type'>
 
 print(type(Animal())) # <class '__main__.Animal'>
+
+
+##* len() function - returns length of enumerable
+# length of string
+print(len("Something"))  # 9
+# length of list
+print(len([1, 2, 3, 4, 5]))  # 5
+# length of tupple
+print(len((1, 2, 3, 4, 5)))  # 5
+
+# length of set
+print(len({1, 2, 3, 4, 5, 5, 6, 6})) # 6 -> NOTE: doesn't count duplicates
+# with dictionary
+print(len({'k1': 'Something', 'k2': 'Something'})) # 2 -> return number of keys for Dictionary
