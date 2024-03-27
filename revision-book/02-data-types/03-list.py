@@ -119,3 +119,13 @@ if 'orange' not in fruits:
 # Output: 
 # Yes, banana is in the list
 # No, orange is not in the list
+
+
+##* Comparing list with '==' and 'is'
+l1 = [1, 2, 3, 'Four']
+l2 = [1, 2, 3, 'Four']
+
+print(l1 == l2)
+print(l1 is l2)
+
+print(l1 is l1)
