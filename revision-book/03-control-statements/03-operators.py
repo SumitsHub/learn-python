@@ -17,6 +17,15 @@ else:
     print('You can go ahead!')
 
 
+##* 'not' keyword
+# NOTE: we can't use '!'(not) operator
+name = 'John'
+is_same_name = name == 'John'
+if not is_same_name:
+    print('not the same name')
+else:
+    print('same name')
+
 
 ##* 'in' keyword - returns true if left operand is present in the right operand
 
