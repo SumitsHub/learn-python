@@ -27,3 +27,14 @@
 |Exponent (**)|Right to Left|
 |*, /, //, %|Left to Right|
 |+, -|Left to Right|
+
+
+### Types returned by python -
+
+1. print(type(0)) - <class 'int'>
+2. print(type("abc")) - <class 'str'>
+3. print(type([1, 2])) - <class 'list'>
+4. print(type({1, 2, 3})) - <class 'set'>
+5. print(type(True)) - <class 'bool'>
+6. print(type({'k1': 'v1'})) - <class 'dict'>
+7. print(type(0.4)) - <class 'float'>
