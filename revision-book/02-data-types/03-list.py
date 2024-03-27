@@ -81,3 +81,24 @@ print(numbers)   # Output: [1, 2, 10, 4, 5]
 
 numbers[1:4] = [20, 30, 40]  # Modify a slice
 print(numbers)               # Output: [1, 20, 30, 40, 5]
+
+
+##* using 'del' keyword to remove elements from list
+
+numbers = [1, 2, 3, 4, 5]
+
+# Delete the element at index 2 (value 3)
+del numbers[2]
+print(numbers)  # Output: [1, 2, 4, 5]
+
+numbers = [1, 2, 3, 4, 5]
+
+# Delete a slice from the list (elements from index 1 to 3)
+del numbers[1:4]
+print(numbers)  # Output: [1, 5]
+
+numbers = [1, 2, 3, 4, 5]
+
+# Delete the entire list
+del numbers
+#* print(numbers) -> NameError: name 'numbers' is not defined
