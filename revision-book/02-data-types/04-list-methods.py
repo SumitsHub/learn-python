@@ -68,9 +68,26 @@ numbers = [3, 1, 4, 1, 5, 9, 2, 6]
 numbers.sort()
 print(numbers)  # Output: [1, 1, 2, 3, 4, 5, 6, 9]
 
+## sorting in reverse order (descending order)
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+numbers.sort(reverse=True)
+print(numbers)  # Output: [9, 6, 5, 4, 3, 2, 1, 1]
+
 ##* reverse(): Reverses the elements of the list in-place.
 
 fruits = ['apple', 'banana', 'cherry']
 fruits.reverse()
 print(fruits)  # Output: ['cherry', 'banana', 'apple']
 
+
+##* clear() - empty the list
+
+lst = [1, 2, 3, 4]
+lst.clear()
+print(lst)  # Output: []
+
+##* copy() - returns shallow copy of the list
+
+lst = [1, 2, 3, 4]
+lst_copy = lst.copy()
+print(lst_copy)  # Output: [1, 2, 3, 4]
