@@ -102,3 +102,20 @@ numbers = [1, 2, 3, 4, 5]
 # Delete the entire list
 del numbers
 #* print(numbers) -> NameError: name 'numbers' is not defined
+
+
+##* 'in' keyword with list - used to check if a value exists within a sequence
+
+fruits = ['apple', 'banana', 'cherry']
+
+# Check if 'banana' is in the list
+if 'banana' in fruits:
+    print('Yes, banana is in the list')
+
+# Check if 'orange' is not in the list
+if 'orange' not in fruits:
+    print('No, orange is not in the list')
+
+# Output: 
+# Yes, banana is in the list
+# No, orange is not in the list
