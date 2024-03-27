@@ -38,3 +38,4 @@
 5. print(type(True)) - <class 'bool'>
 6. print(type({'k1': 'v1'})) - <class 'dict'>
 7. print(type(0.4)) - <class 'float'>
+8. print(type(range(10))) - <class 'range'>
