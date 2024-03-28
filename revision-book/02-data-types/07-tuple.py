@@ -111,3 +111,122 @@ print(tuple_with_list[2][1])    # Output: 'b'
 print(tuple_with_list[2].pop())  # Output: 'c'
 tuple_with_list[2].append('d')
 print(tuple_with_list)  # (1, 2, ['a', 'b', 'd'], 4, 5)
+
+
+##* min(), max() and sum() methods
+
+## 01 Using min(), max(), and sum() with Tuples of Numbers:
+# Tuple of numbers
+numbers = (3, 1, 4, 1, 5, 9, 2, 6, 5, 3)
+
+# Find the minimum value
+minimum = min(numbers)
+print("Minimum value:", minimum)  # Output: Minimum value: 1
+
+# Find the maximum value
+maximum = max(numbers)
+print("Maximum value:", maximum)  # Output: Maximum value: 9
+
+# Compute the sum of all elements
+total = sum(numbers)
+print("Sum of all elements:", total)  # Output: Sum of all elements: 39
+
+
+## 02 Using min(), max(), and sum() with Tuples of Strings (Lexicographic Order):
+# Tuple of strings
+words = ("apple", "banana", "cherry", "date")
+
+# Find the minimum string (lexicographically)
+min_word = min(words)
+print("Minimum word:", min_word)  # Output: Minimum word: apple
+
+# Find the maximum string (lexicographically)
+max_word = max(words)
+print("Maximum word:", max_word)  # Output: Maximum word: date
+
+
+## 03 Using min(), max(), and sum() with Empty Tuples:
+# Empty tuple
+empty_tuple = ()
+
+# For min() and max(), empty tuple raises ValueError
+try:
+    minimum = min(empty_tuple)
+except ValueError:
+    print("Empty tuple has no minimum value.")
+try:
+    maximum = max(empty_tuple)
+except ValueError:
+    print("Empty tuple has no maximum value.")
+
+# For sum(), empty tuple results in 0
+total = sum(empty_tuple)
+print(
+    "Sum of elements in an empty tuple:", total
+)  # Output: Sum of elements in an empty tuple: 0
+
+
+##* sorted() method with tuple
+
+## 01 Sorting a Tuple of Numbers:
+# Tuple of numbers
+numbers = (3, 1, 4, 1, 5, 9, 2, 6, 5, 3)
+
+# Sort the tuple
+sorted_numbers = sorted(numbers)
+print(
+    "Sorted numbers:", sorted_numbers
+)  # Output: Sorted numbers: [1, 1, 2, 3, 3, 4, 5, 5, 6, 9]
+
+
+## 02 Sorting a Tuple of Strings (Lexicographic Order):
+# Tuple of strings
+words = ("apple", "banana", "cherry", "date")
+
+# Sort the tuple
+sorted_words = sorted(words)
+print(
+    "Sorted words:", sorted_words
+)  # Output: Sorted words: ['apple', 'banana', 'cherry', 'date']
+
+## 03 Sorting a Tuple of Mixed Data Types:
+# Tuple of mixed data types
+mixed_data = (3, "apple", 1.5, "banana", 2.5)
+
+# Sort the tuple
+# sorted_mixed_data = sorted(mixed_data)  # TypeError
+
+## 04 Sorting a Tuple in Reverse Order:
+# Tuple of numbers
+numbers = (3, 1, 4, 1, 5, 9, 2, 6, 5, 3)
+
+# Sort the tuple in reverse order
+sorted_numbers_reverse = sorted(numbers, reverse=True)
+print(
+    "Sorted numbers in reverse order:", sorted_numbers_reverse
+)  # Output: Sorted numbers in reverse order: [9, 6, 5, 5, 4, 3, 3, 2, 1, 1]
+
+
+##* tuple() method to convert other types to tuple
+
+## 01 Converting a List to a Tuple:
+# List
+my_list = [1, 2, 3, 4, 5]
+
+# Convert list to tuple
+my_tuple = tuple(my_list)
+print("Tuple:", my_tuple)  # Output: Tuple: (1, 2, 3, 4, 5)
+
+## 02 Converting a String to a Tuple (Characters):
+
+# String
+my_string = "hello"
+
+# Convert string to tuple of characters
+my_tuple = tuple(my_string)
+print("Tuple:", my_tuple)  # Output: Tuple: ('h', 'e', 'l', 'l', 'o')
+
+
+## 03 Converting range() to tuple
+my_tuple = tuple(range(10))
+print("Tuple:", my_tuple)  # Output: Tuple: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
