@@ -230,3 +230,20 @@ print("Tuple:", my_tuple)  # Output: Tuple: ('h', 'e', 'l', 'l', 'o')
 ## 03 Converting range() to tuple
 my_tuple = tuple(range(10))
 print("Tuple:", my_tuple)  # Output: Tuple: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+
+##* return multiple values from function
+# tuple without parenthesis is used to return multiple values from function
+
+def calc(num1, num2):
+    sum = num1 + num2
+    mult = num1 * num2
+    return sum, mult
+
+res = calc(10, 20)
+print(res)  # Output: (30, 200)
+print(type(res))  # Output: <class 'tuple'>
+
+# unpacking tuple
+sum, mult = calc(12, 12)
+print(sum, mult)  # 24 144
