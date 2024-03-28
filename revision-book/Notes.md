@@ -39,6 +39,9 @@
 6. print(type({'k1': 'v1'})) - <class 'dict'>
 7. print(type(0.4)) - <class 'float'>
 8. print(type(range(10))) - <class 'range'>
+9.  <class 'dict_keys'>
+10. <class 'dict_values'>
+11. <class 'dict_items'>
 
 
 ### common methods used with different data types
