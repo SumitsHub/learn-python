@@ -23,3 +23,8 @@ print(type(range(10)))
 # generate numbers from 1 to 10
 numbers = list(range(1, 11))  # using list() to convert range object to list
 print(numbers)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+##* Converting string to list using list()
+greet = 'Hello'
+print(list(greet))  # Output: ['H', 'e', 'l', 'l', 'o']
