@@ -39,3 +39,12 @@
 6. print(type({'k1': 'v1'})) - <class 'dict'>
 7. print(type(0.4)) - <class 'float'>
 8. print(type(range(10))) - <class 'range'>
+
+
+### common methods used with different data types
+
+1. min() & max() - returns smallest and biggest item from the iterables (containing same type of elements)
+2. sum() - returns sum of iterables with start value (default = 0)
+3. len() - return number of elements in an iterable
+4. sorted() - returns new sorted iterable
+5. type() - returns the type of input argument
