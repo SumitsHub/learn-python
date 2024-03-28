@@ -62,3 +62,52 @@ print(single_tuple)  # Output: (42,)
 t = (42)
 print(t) # 42
 print(type(t)) # <class 'int'>
+
+
+##* looping through tuple - similar to lists
+# Example 1: Looping through a tuple of integers
+my_tuple = (1, 2, 3, 4, 5)
+for item in my_tuple:
+    print(item)
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+
+# Example 2: Looping through a tuple of strings
+fruits = ('apple', 'banana', 'cherry')
+for fruit in fruits:
+    print(fruit)
+# Output:
+# apple
+# banana
+# cherry
+
+# Example 3: Looping through a tuple with mixed data types
+mixed_tuple = (1, 'apple', 3.14, True)
+for element in mixed_tuple:
+    print(element)
+# Output:
+# 1
+# apple
+# 3.14
+# True
+
+
+##* list inside tuple
+
+# Tuple with a list inside
+tuple_with_list = (1, 2, ['a', 'b', 'c'], 4, 5)
+
+# Accessing elements of the tuple and the list inside it
+print(tuple_with_list[0])       # Output: 1
+print(tuple_with_list[2])       # Output: ['a', 'b', 'c']
+print(tuple_with_list[2][1])    # Output: 'b'
+
+# modifying list inside tuple
+# NOTE: we can mutate the list inside tuple
+print(tuple_with_list[2].pop())  # Output: 'c'
+tuple_with_list[2].append('d')
+print(tuple_with_list)  # (1, 2, ['a', 'b', 'd'], 4, 5)
