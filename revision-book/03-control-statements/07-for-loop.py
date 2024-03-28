@@ -9,6 +9,8 @@ for fruit in fruits:
 # apple
 # banana
 # cherry
+    
+print(fruit) # cherry -> ACCESSIBLE OUTSIDE LOOP AS WELL
 
 ## iterate over string - 
 word = "Python"
