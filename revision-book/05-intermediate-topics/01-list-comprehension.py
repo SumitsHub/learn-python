@@ -60,3 +60,24 @@ words = ['hello', 'world', 'python']
 # Using list comprehension
 upper_words = [word.upper() for word in words]
 print(upper_words)  # ['HELLO', 'WORLD', 'PYTHON']
+
+
+#* Generating nested list
+nested_list = [[i for i in range(1, 4)] for _ in range(3)]
+print(nested_list)  # [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+
+
+#* Flattening a List of Lists:
+# Nested list
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# Using list comprehension
+flattened_list = [num for sublist in nested_list for num in sublist]
+print(flattened_list) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+#* List comprehension with if-else
+lst = [2, 4, 5, 7, 9, 10, 13, 12]
+
+odd_even_list = ['Odd' if i % 2 != 0 else 'Even' for i in lst]
+print(odd_even_list)  # ['Even', 'Even', 'Odd', 'Odd', 'Odd', 'Even', 'Odd', 'Even']
