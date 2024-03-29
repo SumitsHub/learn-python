@@ -51,3 +51,51 @@ print(sum_nums(4))  # 4
 # 03: normal parameters can't come after *args - func(*args, num1, num2) - NOT VALID
 # 04: only one *args paramters is allowed
 # 05: 'args' is used as name of the paramter by convention, we can use anything -  def addnum(*nums):
+
+
+##* **kwargs - Keyword Arguments
+# accepts named arguments are key: value pair (dictionary)
+
+## **kwargs as parameter
+def func(**kwargs):
+    print(kwargs)
+
+
+func(x='x', y='y', z='z')  # {'x': 'x', 'y': 'y', 'z': 'z'}
+
+## Unpacking dictionary with '**' operator
+d = {'name': 'Sham', 'age': 35}
+func(**d)  # {'name': 'Sham', 'age': 35}
+
+
+
+##* *args and **kwargs together
+def func(*args, **kwargs):
+    print(args, kwargs)
+
+func(1, 2, 3, 4)  # (1, 2, 3, 4) {}
+func(1, 2, name='Ram', age=24)  # (1, 2) {'name': 'Ram', 'age': 24}
+
+
+##* NOTES:
+# 01: **kwargs needs to be the last parameter in the list - def func(**kwargs, *args): - NOT VALID
+
+
+##* About paramter types:
+# Parameters need to be in the following order based on the type:
+## Normal Parameters -> *args -> Named Parameters -> **kwargs
+
+## Example function:
+
+def all_para(roll_no, *marks, std=8, **details):
+    print(f'Roll No: {roll_no}')
+    print(f'Marks: {marks}')
+    print(f'Class (std): {std}')
+    print(f'Student details: {details}')
+
+all_para(12, 90, 89, 88, std=10, **{'name': 'Amit', 'age': 18})
+# Output:
+# Roll No: 12
+# Marks: (90, 89, 88)
+# Class (std): 10
+# Student details: {'name': 'Amit', 'age': 18}
