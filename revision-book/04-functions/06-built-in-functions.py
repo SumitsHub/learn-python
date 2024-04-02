@@ -48,3 +48,36 @@ persons = [
 
 print(min(persons, key=lambda p : p.get('score')))  #  {'name': 'Rishab', 'score': 70, 'age': 26}
 print(min(persons, key=lambda p : p.get('age')))  #  {'name': 'Harshit', 'score': 90, 'age': 24}
+
+
+
+## sort() and sorted()
+
+#* sort() method - Sort the list in ascending order and return None.
+
+fruits = ['grapes', 'orange', 'apple']
+
+fruits.sort()
+print(fruits)  # ['apple', 'grapes', 'orange']
+
+fruits = ['grapes', 'orange', 'apple']
+
+# setting reverse flag to True for descending order
+fruits.sort(reverse=True)
+print(fruits)  # ['orange', 'grapes', 'apple']
+print([x for x in range(5)].sort())  # None -> sort() returns None
+
+
+# using key
+people = [
+    {'name': 'Alice', 'age': 30},
+    {'name': 'Bob', 'age': 25},
+    {'name': 'Charlie', 'age': 35}
+]
+
+people.sort(key=lambda person : person['age'])
+print(people)  # [{'name': 'Bob', 'age': 25}, {'name': 'Alice', 'age': 30}, {'name': 'Charlie', 'age': 35}]
+
+
+#* sorted() - Return a new list containing all items from the iterable in ascending order.
+print(sorted(people, key=lambda p : p['age'], reverse=True))  # [{'name': 'Charlie', 'age': 35}, {'name': 'Alice', 'age': 30}, {'name': 'Bob', 'age': 25}]
