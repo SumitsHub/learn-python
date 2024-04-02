@@ -41,4 +41,4 @@ print(next(filter_iterator))  # 4
 #* NOTE: 'range' object is not an iterator it's an iterable
 # print(next(range(4)))  # ERROR: TypeError: 'range' object is not an iterator
 
-# TODO: create other iterator for othet iterables (tuple, string)
+# TODO: create other iterator for other iterables (tuple, string)
