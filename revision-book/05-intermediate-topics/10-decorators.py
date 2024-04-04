@@ -110,3 +110,25 @@ def add(a, b):
 print(add(2, 4))  # 6
 print(add.__name__)  # add
 print(add.__doc__)  # This function adds 2 input numbers and returns the result
+
+
+
+##* Decorators with arguments - need to add an extra level of nesting:
+
+def my_decorator_with_args(arg1, arg2):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            print(f"Decorator arguments: {arg1}, {arg2}")
+            func(*args, **kwargs)
+        return wrapper
+    return decorator
+
+@my_decorator_with_args("Hello", "World")
+def say_hello(name):
+    print(f"Hello, {name}!")
+
+# Using the decorated function
+say_hello("Alice")
+# Output:
+# Decorator arguments: Hello, World
+# Hello, Alice!
