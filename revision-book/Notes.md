@@ -39,9 +39,14 @@
 6. print(type({'k1': 'v1'})) - <class 'dict'>
 7. print(type(0.4)) - <class 'float'>
 8. print(type(range(10))) - <class 'range'>
-9.  <class 'dict_keys'>
-10. <class 'dict_values'>
-11. <class 'dict_items'>
+9. print(type(my_sum_func)) - <class 'function'>
+10. print(type(sum)), print(type(max)) - <class 'builtin_function_or_method'>
+11. print(type(type)), print(type(filter)), print(type(map)) - <class 'type'>
+12. <class 'dict_keys'>
+13. <class 'dict_values'>
+14. <class 'dict_items'>
+15. <class 'generator'>
+16. <class 'map'>
 
 
 ### common methods used with different data types
