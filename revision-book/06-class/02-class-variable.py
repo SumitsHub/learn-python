@@ -22,7 +22,7 @@ print(Dog.species)   # Output: Canis familiaris
 
 
 ##* magic variable
-print(dog1.__dict__)  # {'name': 'Buddy', 'age': 3}
+print(dog1.__dict__)  # {'name': 'Buddy', 'age': 3}  # NOTE: this didn't contain class variable
 
 print(Dog.__dict__)  # {'__module__': '__main__', 'species': 'Canis familiaris', '__init__': <function Dog.__init__ at 0x00000266C5478E00>, '__dict__': <attribute '__dict__' of 'Dog' objects>, '__weakref__': <attribute '__weakref__' of 'Dog' objects>, '__doc__': None}
 # NOTE: __dict__ for class contains class variables (e.g. 'species': 'Canis familiaris')
