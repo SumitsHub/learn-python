@@ -38,3 +38,35 @@ parrot = Parrot("Polly")
 print(parrot.name)  # Output: Polly
 print(parrot.sound())  # Output: None - (Method from Animal superclass)
 print(parrot.fly())  # Output: I can fly! - (Method from Bird superclass)
+
+
+
+#* super keyword - The super() function in Python is used to access methods and properties from a superclass. 
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def sound(self):
+        return "Generic animal sound"
+
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)  # Call superclass constructor
+        # another way to call parent class constructor
+        # Animal.__init__(self, name)  # uncommon way
+        self.breed = breed
+
+    def sound(self):
+        return "Woof!"
+
+
+# Create an instance of the Dog class
+dog = Dog("Buddy", "Labrador")
+
+# Accessing properties from the superclass using super()
+print(dog.name)  # Output: Buddy
+
+# Accessing overridden method from the superclass using super()
+print(super(Dog, dog).sound())  # Output: Generic animal sound
